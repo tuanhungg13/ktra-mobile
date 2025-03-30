@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Card thông tin -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:text="Tên"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <!-- Thông tin chi tiết -->
+                <include
+                    layout="@layout/item_detail_row"
+                    android:id="@+id/row_id" />
+
+                <include
+                    layout="@layout/item_detail_row"
+                    android:id="@+id/row_position" />
+
+                <include
+                    layout="@layout/item_detail_row"
+                    android:id="@+id/row_phone" />
+
+                <include
+                    layout="@layout/item_detail_row"
+                    android:id="@+id/row_email" />
+
+                <include
+                    layout="@layout/item_detail_row"
+                    android:id="@+id/row_address" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card hành động -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_message"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/message" />
+
+                <ImageView
+                    android:id="@+id/img_phone"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/phone" />
+
+                <ImageView
+                    android:id="@+id/img_mail"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/mail" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

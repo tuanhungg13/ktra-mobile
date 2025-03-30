@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tlu Contact Kotlin</string>
+
+    <style name="TextInputTheme" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/white</item> <!-- Màu nền -->
+        <item name="boxStrokeColor">@color/primary</item> <!-- Màu viền -->
+        <item name="android:textColor">@color/black</item> <!-- Màu chữ -->
+    </style>
+</resources>

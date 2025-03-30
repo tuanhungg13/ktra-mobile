@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TluContactKotlin" parent="Theme.Material3.Light">
+        <!-- Màu chính cho app -->
+        <item name="textInputStyle">@style/TextInputTheme</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:colorBackground">#E3F2FD</item> <!-- Ví dụ: màu hồng tím -->
+
+    </style>
+    <!--    <style name="Theme.TluContactKotlin" parent="android:Theme.Material.Light.NoActionBar" />-->
+</resources>
